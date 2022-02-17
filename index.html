@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
+  maximum-scale=5"
+    />
+
+    <link rel="icon" href="devchallenges.png" />
+
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://devchallenges.io/"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Devchallenges</title>
+  </head>
+  <body>
+    <!-- <div class="welcome">
+      <div class="welcome-text">
+        <h1>
+          Welcome to
+          <a href="https://devchallenges.io/" target="_blank"
+            >devchallenges.io</a
+          >
+        </h1>
+
+        <p>
+          If you have any questions, don't hesitate to ask on Discord. Here are
+          7 general steps to complete the challenge:
+        </p>
+      </div>
+
+      <ul>
+        <li><b>Step 1:</b> Create a new repository on github</li>
+        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
+        <li>
+          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
+        </li>
+        <li><b>Step 4:</b> Complete all user stories</li>
+        <li><b>Step 5:</b> Update README.md</li>
+        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
+        <li>
+          <b>Step 7:</b> Share your solution on Discord, Twitter and other
+          platforms to ask for feedback
+        </li>
+      </ul>
+    </div>-->
+    <div class="container">
+      <div class="col-1">
+        <div class="header-row">
+          <div class="search">
+            <button class="search-btn">Search for places</button>
+          </div>
+          <div class="gps-icon">
+            <span class="material-icons">gps_fixed</span>
+          </div>
+        </div>
+        <div class="cur-weather-details">
+          <div class="cur-weather-img"></div>
+          <div class="cur-temp">
+            <span class="value"></span><span class="unit">&deg;C</span>
+          </div>
+          <div class="cur-weather-description">
+            <p></p>
+          </div>
+          <div class="day-and-date">
+            <span>Today .</span>
+            <span class="date"></span>
+          </div>
+          <div class="cur-location">
+            <p>
+              <img src="1x/baseline_location_on_white_24dp.png" /><span
+                >Haldwani</span
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-col">
+        <div class="cross-btn">
+          <span class="material-icons">close</span>
+        </div>
+        <div class="search-row">
+          <span class="material-icons search-icon">search</span>
+          <input
+            type="search"
+            class="search-input"
+            placeholder=" Search location"
+          />
+          <button class="search-button">Search</button>
+        </div>
+      </div>
+
+      <div class="col-2">
+        <div class="temp-convertors">
+          <div class="celcius-btn btn">&deg;C</div>
+          <div class="fahrenheit-btn btn">&deg;F</div>
+        </div>
+        <div class="row temp-forecast-cards">
+          <div class="card">
+            <div class="day-and-date">Tomorrow</div>
+            <img alt="" class="weather-img" />
+            <div class="temp">
+              <span class="max-temp">22&deg;C</span>
+              <span class="min-temp">15&deg;C</span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="day-and-date"></div>
+            <img src="" alt="" class="weather-img" />
+            <div class="temp">
+              <span class="max-temp"></span>
+              <span class="min-temp"></span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="day-and-date"></div>
+            <img src="" alt="" class="weather-img" />
+            <div class="temp">
+              <span class="max-temp"></span>
+              <span class="min-temp"></span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="day-and-date"></div>
+            <img src="" alt="" class="weather-img" />
+            <div class="temp">
+              <span class="max-temp"></span>
+              <span class="min-temp"></span>
+            </div>
+          </div>
+          <div class="card">
+            <div class="day-and-date"></div>
+            <img src="" alt="" class="weather-img" />
+            <div class="temp">
+              <span class="max-temp"></span>
+              <span class="min-temp"></span>
+            </div>
+          </div>
+        </div>
+        <section class="highlights">
+          <h2>Todays's Highlights</h2>
+          <div class="row-1 highlight-row">
+            <div class="card-1 highlight-card wind-status">
+              <h4 class="highlight-heading">Wind Status</h4>
+              <p><span class="value"></span><span class="unit">mph</span></p>
+              <p class="wind-direction">WSW</p>
+            </div>
+            <div class="card-2 highlight-card humidity">
+              <h4 class="highlight-heading">Humidity</h4>
+              <p><span class="value"></span><span class="unit">%</span></p>
+              <div class="range-values">
+                <span class="humidity-percent">0</span
+                ><span class="humidity-percent">50</span
+                ><span class="humidity-percent">100</span>
+              </div>
+              <div class="range"><div class="filled"></div></div>
+              <span class="percentage-sign">%</span>
+            </div>
+          </div>
+          <div class="row-2 highlight-row">
+            <div class="card-3 highlight-card visibility">
+              <h4 class="highlight-heading">Visibility</h4>
+              <p><span class="value"> </span><span class="unit">miles</span></p>
+            </div>
+            <card class="card-4 highlight-card air-pressure">
+              <h4 class="highlight-heading">Air Pressure</h4>
+              <p><span class="value"></span><span class="unit">mb</span></p>
+            </card>
+          </div>
+        </section>
+        <p class="username">created by Nikita - devchallenges.io</p>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
